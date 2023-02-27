@@ -1,0 +1,246 @@
+@import "../../styles/base.scss";
+
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media(min-width: 700px) {
+    .login {
+        align-self: center;
+
+        .login-content {
+            max-width: 700px;
+            min-width: 550px;
+            height: 500px;
+        }
+
+        label {
+            font-weight: bold !important;
+        }
+
+        .content {
+            border-bottom: 1px solid $grey-color;
+            margin-bottom: 25px;
+            padding: 0px 10px 0px 10px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            max-width: 700px;
+            margin: 0px 0px 15px 0px !important;
+        }
+
+        .row {
+            max-width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0px 0px 15px 0px !important;
+        }
+
+        .wide-input {
+            min-width: 100%;
+            height: 50px;
+            text-indent: 10px;
+            border-radius: 3px;
+            border: 1px solid $black;
+        }
+
+        .row .column input {
+            min-width: 325px;
+            height: 50px;
+            text-indent: 10px;
+            border-radius: 3px;
+            border: 1px solid $black;
+        }
+
+        .number-letters {
+            align-self: flex-end;
+            font-weight: normal !important;
+        }
+
+        .bad-input {
+            border: 2px solid $red !important;
+        }
+
+        .error-text {
+            color: $red;
+            margin: 0 0 0 0 !important;
+        }
+
+        p {
+            margin-bottom: 40px;
+        }
+
+        .pass-wrapper {
+            position: relative;
+            display: flex;
+        }
+
+        i {
+            position: absolute;
+            top: 25%;
+            right: 5%;
+        }
+
+        i:hover {
+            color: $light-green-color;
+            cursor: pointer;
+        }
+
+        .pass-wrapper .password-checker {
+            position: absolute;
+            bottom: -5%;
+            left: 1%;
+        }
+
+        .password-checker {
+            width: 100%;
+            text-align: left;
+            pointer-events: none;
+
+            .pass-checker-bar {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 98%;
+                height: 5px;
+            }
+
+            .pass-checker-bar::-webkit-progress-bar {
+                background: white;
+            }
+        }
+
+        .strength-1::-webkit-progress-value {
+            background: #e20b07;
+        }
+
+        .strength-2::-webkit-progress-value {
+            background: #ebbd04;
+        }
+
+        .strength-3::-webkit-progress-value {
+            background: #01a917;
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .login {
+        align-self: center;
+
+        .login-content {
+            max-width: 500px;
+            height: 500px;
+        }
+
+        label {
+            font-weight: bold !important;
+        }
+
+        .content {
+            border-bottom: 1px solid $grey-color;
+            margin-bottom: 25px;
+            padding: 0px 10px 0px 10px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            max-width: 700px;
+            margin: 0px 0px 15px 0px !important;
+        }
+
+        .row {
+            max-width: 325px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0px 0px 15px 0px !important;
+        }
+
+        .wide-input {
+            max-width: 325px;
+            height: 50px;
+            text-indent: 10px;
+            border-radius: 3px;
+            border: 1px solid $black;
+        }
+
+        .row .column input {
+            min-width: 325px;
+            height: 50px;
+            text-indent: 10px;
+            border-radius: 3px;
+            border: 1px solid $black;
+        }
+
+        .number-letters {
+            align-self: flex-end;
+            font-weight: normal !important;
+        }
+
+        .bad-input {
+            border: 2px solid $red !important;
+        }
+
+        .error-text {
+            color: $red;
+            margin: 0 0 0 0 !important;
+        }
+
+        p {
+            margin-bottom: 40px;
+        }
+
+        .pass-wrapper {
+            position: relative;
+            display: flex;
+        }
+
+        i {
+            position: absolute;
+            top: 25%;
+            right: 5%;
+        }
+
+        .pass-wrapper .password-checker {
+            position: absolute;
+            bottom: -5%;
+            left: 1%;
+        }
+
+        .password-checker {
+            width: 100%;
+            text-align: left;
+            pointer-events: none;
+
+            .pass-checker-bar {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 98%;
+                height: 5px;
+            }
+
+            .pass-checker-bar::-webkit-progress-bar {
+                background: white;
+            }
+        }
+
+        .strength-1::-webkit-progress-value {
+            background: #e20b07;
+        }
+
+        .strength-2::-webkit-progress-value {
+            background: #ebbd04;
+        }
+
+        .strength-3::-webkit-progress-value {
+            background: #01a917;
+        }
+    }
+}

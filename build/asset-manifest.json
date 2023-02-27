@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c38a1081.css",
+    "main.js": "/static/js/main.29e3b690.js",
+    "static/media/green-tick.png": "/static/media/green-tick.07c1b430de71a343ecdc.png",
+    "static/media/Logotipo-Vertical-Verde-Alta.png": "/static/media/Logotipo-Vertical-Verde-Alta.d7936a379c8eb8ef5656.png",
+    "index.html": "/index.html",
+    "main.c38a1081.css.map": "/static/css/main.c38a1081.css.map",
+    "main.29e3b690.js.map": "/static/js/main.29e3b690.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c38a1081.css",
+    "static/js/main.29e3b690.js"
+  ]
+}

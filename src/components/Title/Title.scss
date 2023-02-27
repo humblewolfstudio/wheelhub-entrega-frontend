@@ -1,0 +1,54 @@
+@import "../../styles/base.scss";
+
+@media(min-width: 700px) {
+    .title {
+        width: 700px;
+        align-self: center;
+
+        .title-content {
+            margin: 15px 25px 0px 0px;
+        }
+
+        .title {
+            font-weight: 900;
+            margin-bottom: 40px;
+            padding-bottom: 5px;
+            position: relative;
+        }
+
+        .title::before {
+            content: "";
+            position: absolute;
+            width: 50px;
+            left: 0px;
+            bottom: 0px;
+            border-bottom: 3px solid $green-color;
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .title {
+        align-self: flex-start;
+
+        .title-content {
+            margin: 15px 25px 0px 0px;
+        }
+
+        .title {
+            font-weight: 900;
+            margin-bottom: 40px;
+            padding-bottom: 5px;
+            position: relative;
+        }
+
+        .title::before {
+            content: "";
+            position: absolute;
+            width: 50px;
+            left: 0px;
+            bottom: 0px;
+            border-bottom: 3px solid $green-color;
+        }
+    }
+}
